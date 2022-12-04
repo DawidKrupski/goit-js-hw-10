@@ -3,7 +3,7 @@ import fetchCountries from './fetchCountries';
 import debounce from 'lodash.debounce';
 
 const input = document.querySelector('input#search-box');
-const inputStyle = (document.getElementById(`search-box`).onkeydown = event => {
+const inputStyle = (input.onkeydown = event => {
   return /[a-z\s]/i.test(event.key);
 });
 
